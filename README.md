@@ -18,7 +18,7 @@ This repository contains an advanced search component implemented in React, acco
 
 ## Demo Live
 
-Check out teh live demo [here](https://search-pagination-js.netlify.app/)
+Check out teh live demo [here](https://search-pagination-ts.netlify.app/)
 
 ## Installation and Usage
 

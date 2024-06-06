@@ -1,10 +1,12 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import Principal from "./Principal";
 
 function App() {
   return (
-    <>
-      <h1 className="text-teal-500">Hello world</h1>
-    </>
+    <BrowserRouter>
+      <Principal />
+    </BrowserRouter>
   );
 }
 
