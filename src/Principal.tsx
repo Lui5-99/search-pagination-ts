@@ -15,7 +15,7 @@ const Principal = () => {
     <div className="w-2/3 flex flex-col mx-auto gap-y-10 my-10">
       <Search state={db} setState={setDataSearch} />
       <div className="w-full flex justify-center">
-        <table className="table-auto">
+        <table className="table-auto w-full">
           <thead>
             <tr>
               <th className="border px-4 py-2">Id</th>
@@ -26,7 +26,7 @@ const Principal = () => {
             </tr>
           </thead>
           <tbody>
-            {dataSearch.map((producto) => (
+            {records.map((producto) => (
               <tr key={producto.Id}>
                 <td className="border px-4 py-2">{producto.Id}</td>
                 <td className="border px-4 py-2">{producto.Nombre}</td>
@@ -38,7 +38,7 @@ const Principal = () => {
           </tbody>
         </table>
       </div>
-      <Pagination />
+      <Pagination data={dataSearch} setRecords={setRecords} />
     </div>
   );
 };
